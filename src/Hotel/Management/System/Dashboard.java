@@ -2,6 +2,8 @@ package Hotel.Management.System;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
+import java.security.spec.ECField;
 
 public class Dashboard extends JFrame{
     Dashboard() {
@@ -40,8 +42,28 @@ public class Dashboard extends JFrame{
         JMenuItem addemployee = new JMenuItem("ADD EMPLOYEE");
         admin.add(addemployee);
 
+        addemployee.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                try{
+                    setVisible(false);
+                    new AddEmployee();
+                }catch(Exception e){}
+            }
+        });
+
         JMenuItem addrooms = new JMenuItem("ADD ROOMS");
         admin.add(addrooms);
+
+        addrooms.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                try{
+                    setVisible(false);
+                    new AddRooms();
+                }catch(Exception e){}
+            }
+        });
 
         JMenuItem adddriver = new JMenuItem("ADD DRIVER");
         admin.add(adddriver);

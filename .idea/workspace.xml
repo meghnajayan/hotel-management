@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a3155c-509e-4f62-9cf9-44d8c99e2c54" name="Changes" comment="Connection made to SQL.">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Hotel/Management/System/AddEmployee.java" afterDir="false" />
+    <list default="true" id="27a3155c-509e-4f62-9cf9-44d8c99e2c54" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hotel/Management/System/AddRooms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hotel/Management/System/HotelManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hotel/Management/System/HotelManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hotel/Management/System/conn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hotel/Management/System/Conn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hotel/Management/System/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hotel/Management/System/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hotel/Management/System/AddEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hotel/Management/System/AddEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hotel/Management/System/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hotel/Management/System/Dashboard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,27 +48,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/meghn/Downloads/mysql-connector-java-8.0.28.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/meghn/IdeaProjects/HotelManagement/src/Hotel/Management/System/AddRooms.java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.database.main"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;MySQL&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "MySQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.HotelManagement">
     <configuration name="Dashboard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hotel.Management.System.Dashboard" />
@@ -113,7 +118,8 @@
       <workItem from="1669533235922" duration="21346000" />
       <workItem from="1669618134774" duration="5194000" />
       <workItem from="1669647659921" duration="3719000" />
-      <workItem from="1669694820056" duration="2813000" />
+      <workItem from="1669694820056" duration="11002000" />
+      <workItem from="1669734563150" duration="3947000" />
     </task>
     <task id="LOCAL-00001" summary="Main Function added">
       <created>1669534787102</created>
@@ -136,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669617001913</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Connection made to SQL.">
+      <created>1669700450100</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669700450100</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,5 +171,9 @@
     <MESSAGE value="Changes made to the file" />
     <MESSAGE value="Connection made to SQL." />
     <option name="LAST_COMMIT_MESSAGE" value="Connection made to SQL." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
