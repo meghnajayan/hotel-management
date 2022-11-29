@@ -2,8 +2,10 @@ package Hotel.Management.System;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 
-public class Dashboard extends JFrame{
+public class Dashboard extends JFrame
+{
     Dashboard() {
         setLayout(null);
         setBounds(0, 0, 1550, 1000);
@@ -39,6 +41,17 @@ public class Dashboard extends JFrame{
 
         JMenuItem addemployee = new JMenuItem("ADD EMPLOYEE");
         admin.add(addemployee);
+
+        addemployee.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                try{
+                    setVisible(false);
+                    new AddEmployee();
+
+                }catch(Exception e){}
+            }
+        });
+
 
         JMenuItem addrooms = new JMenuItem("ADD ROOMS");
         admin.add(addrooms);
