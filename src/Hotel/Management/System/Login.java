@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 
 public class Login extends JFrame implements ActionListener {
 
-    JTextField username;
+    JTextField username ;
     JPasswordField password;
     JButton login, cancel;
 
@@ -78,6 +78,7 @@ public class Login extends JFrame implements ActionListener {
                     new Dashboard();
                 } else {
                     JOptionPane.showMessageDialog(null, "Invalid Username or Password");
+                    setVisible(false);
                 }
 
             } catch (Exception e) {

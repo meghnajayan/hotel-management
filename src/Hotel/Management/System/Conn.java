@@ -1,5 +1,6 @@
 package Hotel.Management.System;
 import java.sql.*;
+import java.sql.Connection;
 
 public class Conn {
     Connection connection;
@@ -14,5 +15,8 @@ public class Conn {
         }catch(Exception e){
             e.printStackTrace();
         }
+
+
     }
 }
+
