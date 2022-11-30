@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a3155c-509e-4f62-9cf9-44d8c99e2c54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Hotel/Management/System/AddRooms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hotel/Management/System/AddDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hotel/Management/System/AddEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hotel/Management/System/AddEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hotel/Management/System/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hotel/Management/System/Dashboard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +115,7 @@
       <workItem from="1669618134774" duration="5194000" />
       <workItem from="1669647659921" duration="3719000" />
       <workItem from="1669694820056" duration="11002000" />
-      <workItem from="1669734563150" duration="3947000" />
+      <workItem from="1669734563150" duration="4618000" />
     </task>
     <task id="LOCAL-00001" summary="Main Function added">
       <created>1669534787102</created>
@@ -149,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669700450100</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Employee details added successfully">
+      <created>1669746812977</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669746812977</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +173,8 @@
     <MESSAGE value="Main Function added" />
     <MESSAGE value="Changes made to the file" />
     <MESSAGE value="Connection made to SQL." />
-    <option name="LAST_COMMIT_MESSAGE" value="Connection made to SQL." />
+    <MESSAGE value="Employee details added successfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="Employee details added successfully" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
