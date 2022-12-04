@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+
 public class Dashboard extends JFrame
 {
     Dashboard() {
@@ -32,8 +33,18 @@ public class Dashboard extends JFrame
         hotel.setForeground(Color.RED);
         nb.add(hotel);
 
-        JMenuItem reception = new JMenu("RECEPTION");
+        JMenuItem reception = new JMenuItem("RECEPTION");
         hotel.add(reception);
+
+        reception.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                try{
+                    setVisible(false);
+                    new Reception();
+
+                }catch(Exception e){}
+            }
+        });
 
         JMenu admin = new JMenu("ADMIN");
         admin.setForeground(Color.BLUE);
@@ -55,6 +66,15 @@ public class Dashboard extends JFrame
 
         JMenuItem addrooms = new JMenuItem("ADD ROOMS");
         admin.add(addrooms);
+        addrooms.addActionListener(new ActionListener(){
+        public void actionPerformed(ActionEvent ae){
+            try{
+                setVisible(false);
+                new AddRooms();
+
+            }catch(Exception e){}
+        }
+    });
 
         JMenuItem adddriver = new JMenuItem("ADD DRIVER");
         admin.add(adddriver);
