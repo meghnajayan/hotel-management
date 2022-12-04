@@ -2,25 +2,50 @@ package Hotel.Management.System;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Reception extends JFrame {
+public class Reception extends JFrame implements ActionListener {
+    JButton newCustomer,rooms;
     Reception(){
 
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
 
-        JButton newCustomer = new JButton("New Customer Form");
+        newCustomer = new JButton("New Customer Form");
         newCustomer.setBounds(10,30,200,30);
         newCustomer.setBackground(Color.BLACK);
         newCustomer.setForeground(Color.WHITE);
+        newCustomer.addActionListener(this);
         add(newCustomer);
 
+        newCustomer.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                try{
+                    setVisible(false);
+                    new AddCustomer();
 
-        JButton rooms = new JButton("Rooms");
+                }catch(Exception e){}
+            }
+        });
+
+
+        rooms = new JButton("Rooms");
         rooms.setBounds(10,70,200,30);
         rooms.setBackground(Color.BLACK);
         rooms.setForeground(Color.WHITE);
+        newCustomer.addActionListener(this);
         add(rooms);
+
+        rooms.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                try{
+                    setVisible(false);
+                    new Room();
+
+                }catch(Exception e){}
+            }
+        });
 
 
         JButton department = new JButton("Department");
@@ -98,5 +123,11 @@ public class Reception extends JFrame {
     }
     public static void main(String[] args){
           new Reception();
+    }
+
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
     }
 }
