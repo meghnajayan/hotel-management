@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Reception extends JFrame implements ActionListener {
-    JButton newCustomer,rooms;
+    JButton newCustomer,rooms,department,allEmployee,searchrooms;
     Reception(){
 
         getContentPane().setBackground(Color.WHITE);
@@ -48,18 +48,38 @@ public class Reception extends JFrame implements ActionListener {
         });
 
 
-        JButton department = new JButton("Department");
+        department = new JButton("Department");
         department.setBounds(10,110,200,30);
         department.setBackground(Color.BLACK);
         department.setForeground(Color.WHITE);
         add(department);
 
+        department.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                try{
+                    setVisible(false);
+                    new Department();
 
-        JButton allEmployee = new JButton("All Employee");
+                }catch(Exception e){}
+            }
+        });
+
+
+        allEmployee = new JButton("All Employee");
         allEmployee.setBounds(10,150,200,30);
         allEmployee.setBackground(Color.BLACK);
         allEmployee.setForeground(Color.WHITE);
         add(allEmployee);
+
+        allEmployee.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                try{
+                    setVisible(false);
+                    new EmployeeInfo();
+
+                }catch(Exception e){}
+            }
+        });
 
         JButton customers = new JButton("Customer Info");
         customers.setBounds(10,190,200,30);
@@ -67,11 +87,31 @@ public class Reception extends JFrame implements ActionListener {
         customers.setForeground(Color.WHITE);
         add(customers);
 
+        customers.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                try{
+                    setVisible(false);
+                    new CustomerInfo();
+
+                }catch(Exception e){}
+            }
+        });
+
         JButton managers = new JButton("Manager Info");
         managers.setBounds(10,230,200,30);
         managers.setBackground(Color.BLACK);
         managers.setForeground(Color.WHITE);
         add(managers);
+
+        managers.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                try{
+                    setVisible(false);
+                    new ManagerInfo();
+
+                }catch(Exception e){}
+            }
+        });
 
         JButton checkout = new JButton("Checkout");
         checkout.setBounds(10,270,200,30);
@@ -83,7 +123,18 @@ public class Reception extends JFrame implements ActionListener {
         update.setBounds(10,310,200,30);
         update.setBackground(Color.BLACK);
         update.setForeground(Color.WHITE);
+        update.addActionListener(this);
         add(update);
+
+        update.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                try{
+                    setVisible(false);
+                    new UpdateCheck();
+
+                }catch(Exception e){}
+            }
+        });
 
         JButton roomstatus = new JButton(" Update Room Status");
         roomstatus.setBounds(10,350,200,30);
@@ -97,15 +148,24 @@ public class Reception extends JFrame implements ActionListener {
         pickup.setForeground(Color.WHITE);
         add(pickup);
 
-        JButton searchrooms = new JButton(" Search Rooms");
+        searchrooms = new JButton(" Search Rooms");
         searchrooms.setBounds(10,430,200,30);
         searchrooms.setBackground(Color.BLACK);
         searchrooms.setForeground(Color.WHITE);
         add(searchrooms);
+        searchrooms.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                try{
+                    setVisible(false);
+                    new SearchRoom();
+
+                }catch(Exception e){}
+            }
+        });
 
 
         JButton logout = new JButton(" Logout");
-        logout.setBounds(10,390,200,30);
+        logout.setBounds(10,470,200,30);
         logout.setBackground(Color.BLACK);
         logout.setForeground(Color.WHITE);
         add(logout);

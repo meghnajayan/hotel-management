@@ -10,9 +10,11 @@ import java.sql.ResultSet;
 public class AddCustomer extends JFrame implements ActionListener {
     JComboBox comboid;
 
-    JTextField tfnumber, tfname, tfcountry, tfdeposit;
+    JTextField tfnumber, tfname, tfcountry, tfdeposit,checkintime;
     JRadioButton rmale, rfemale, rothers;
     Choice croom;
+
+
 
 
     JButton add, back;
@@ -108,13 +110,27 @@ public class AddCustomer extends JFrame implements ActionListener {
         croom.setBounds(205,280,150,25);
         add(croom);
 
+        JLabel lbltime = new JLabel("Checkin time");
+        lbltime.setBounds(35, 320, 150, 20);
+        lbltime.setFont(new Font("Raleway", Font.PLAIN, 20));
+        add(lbltime);
+
+
+
+        checkintime = new JTextField();
+        checkintime.setBounds(205, 320, 150, 25);
+        checkintime.setFont(new Font("Raleway", Font.PLAIN, 16  ));
+        add(checkintime);
+
+
+
         JLabel lbldeposit = new JLabel("Deposit");
-        lbldeposit.setBounds(35, 320, 100, 20);
+        lbldeposit.setBounds(35, 360 , 100, 20);
         lbldeposit.setFont(new Font("Raleway", Font.PLAIN, 20));
         add(lbldeposit);
 
         tfdeposit = new JTextField();
-        tfdeposit.setBounds(205, 320, 150, 25);
+        tfdeposit.setBounds(205, 360, 150, 25);
         add(tfdeposit);
 
         add = new JButton("Add");
@@ -167,10 +183,11 @@ public class AddCustomer extends JFrame implements ActionListener {
             }
             String country = tfcountry.getText();
             String room = croom.getSelectedItem();
+            String time = checkintime.getText();
             String deposit = tfdeposit.getText();
 
             try{
-                String query = "insert into customer values('"+id+"','"+number+"','"+name+"','"+gender+"','"+country+"','"+room+"','"+deposit+"')";
+                String query = "insert into customer values('"+id+"','"+number+"','"+name+"','"+gender+"','"+country+"','"+room+"','"+time+"','"+deposit+"')";
                 String query2 = "update room set availability= 'Occupied'where roomnumber ='"+room+"' ";
                 Conn connection = new Conn();
                 connection.statement.executeUpdate(query);
